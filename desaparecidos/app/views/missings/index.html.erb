@@ -21,13 +21,14 @@
             
             
             <div class="col-lg-4 col-sm-6 text-center thumbnail">
-              <%unless person.picture == 'default'%>
+              
+              <%unless person.picture == 'default'  ||  person.picture == nil%>
               <%= image_tag "fotos/#{person.picture}", :width => 250, :height => 250, class: "img-responsive img-center"%>
               <%else%>
               <%= image_tag 'missing-image.gif', :width => 250, :height => 250,class: "img-circle img-responsive img-center"%>
               <%end%>
               <div class="caption">
-              <h4 class="text-center"> <%=person.name%> </h4>
+              <h5 class="text-center"> <%=person.name%> </h5>
               <p class="text-center"> <%=status(person.status)%> </p>
               </div>
               <br>
