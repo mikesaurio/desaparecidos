@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  since: MyText
+  where_missing: MyText
+  detail: MyText
+  status: MyText
+  picture: MyText
+
+two:
+  name: MyText
+  since: MyText
+  where_missing: MyText
+  detail: MyText
+  status: MyText
+  picture: MyText

@@ -1,0 +1,41 @@
+<%= form_for(@missing) do |f| %>
+  <% if @missing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@missing.errors.count, "error") %> prohibited this missing from being saved:</h2>
+
+      <ul>
+      <% @missing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </div>
+  <div class="field">
+    <%= f.label :since %><br>
+    <%= f.text_area :since %>
+  </div>
+  <div class="field">
+    <%= f.label :where_missing %><br>
+    <%= f.text_area :where_missing %>
+  </div>
+  <div class="field">
+    <%= f.label :detail %><br>
+    <%= f.text_area :detail %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_area :status %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.text_area :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
