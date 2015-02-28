@@ -17,9 +17,11 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Desaparecidos</h2>
-                  <%= render "shared/search", custom_path: missings_path(@municipio), search_placeholder: 'Buscar por nombre' %>
+            <div class="col-lg-12 page-header">
+              <div class="row">
+               <div class="col-md-4 text-vertical-center"><h2 class="text-center">Desaparecidos</h2></div>
+                <div class="col-md-8"><%= render "shared/search", custom_path: missings_path(@municipio), search_placeholder: 'Buscar por nombre' %></div>
+              </div>
             </div>
             <%unless @missings.nil?%>
             <%@missings.each do |person|%>

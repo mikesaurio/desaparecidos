@@ -5,8 +5,6 @@ class MissingsController < ApplicationController
   # GET /missings.json
   def index
   if params[:q]
-    puts '*****************'
-    puts params[:q]
     search = params[:q]
       @busqueda =Missing.where("name LIKE ? ", "%#{search}%")
      @missings = @busqueda.page(params[:page]).per(6)
