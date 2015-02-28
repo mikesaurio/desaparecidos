@@ -2,9 +2,9 @@
  <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Welcome To Our Studio!</div>
-            <div class="intro-heading">It's Nice To Meet You</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            <div class="intro-lead-in">Nos faltan más</div>
+            <div class="intro-heading">Los desaparecidos no reconocidos</div>
+            <a href="#services" class="page-scroll btn btn-xl">CASOS</a>
         </div>
     </div>
 </header>
@@ -14,26 +14,26 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
+                <h2 class="page-header">Desaparecidos</h2>
             </div>
             <%@missings.each do |person|%>
             <%= link_to missing_path(person.id) do %>
             <div class="col-lg-4 col-sm-6 text-center">
               <%unless person.picture == 'default'%>
-              <%= image_tag "fotos/#{person.picture}" , class: "img-circle img-responsive img-center"%>
+              <%= image_tag "fotos/#{person.picture}" , class: "img-responsive img-center"%>
               <%else%>
               <%= image_tag 'missing-image.gif' , class: "img-circle img-responsive img-center img-small"%>
               <%end%>
-              <h4 class="text-center"> <%=person.name%> </h4>
-              <h4 class="text-center"> <%=status(person.status)%> </h4>
+              <p class="text-center"> <%=person.name%> </p>
+              <p class="text-center"> <%=status(person.status)%> </p>
               <br>
           </div>
-          <% end %>
+          <%end%>
           <%end%>
       </div>
   </div>
-   <div class="row text-center">
-  <%= paginate @missings %>
+  <div class="row text-center">
+    <%= paginate @missings %>
   </div>
 </section>
 
