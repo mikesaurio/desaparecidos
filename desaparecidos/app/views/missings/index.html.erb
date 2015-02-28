@@ -19,9 +19,14 @@
             <%@missings.each do |person|%>
             <%= link_to missing_path(person.id) do %>
             <div class="col-lg-4 col-sm-6 text-center">
-              <%=image_tag "missing-image.gif" , class: "img-circle img-responsive img-center" %>
-              <h3 class="text-left"> <%=@missings.name%> </h3>
-              <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+              <%unless person.picture == 'default'%>
+              <%= image_tag "fotos/#{person.picture}" , class: "img-circle img-responsive img-center"%>
+              <%else%>
+              <%= image_tag 'missing-image.gif' , class: "img-circle img-responsive img-center img-small"%>
+              <%end%>
+              <h4 class="text-center"> <%=person.name%> </h4>
+              <h4 class="text-center"> <%=status(person.status)%> </h4>
+              <br>
           </div>
           <% end %>
           <%end%>

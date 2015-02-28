@@ -5,4 +5,12 @@ module MissingsHelper
       ['No reconocido', '0'],
     ]
 end
+def status(var)
+  if var== '1'
+    'Reconocido'
+  else
+    'No Reconocido'
+  end
+end
+
 end
