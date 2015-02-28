@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @missing.name %>
+</p>
+
+<p>
+  <strong>Since:</strong>
+  <%= @missing.since %>
+</p>
+
+<p>
+  <strong>Where missing:</strong>
+  <%= @missing.where_missing %>
+</p>
+
+<p>
+  <strong>Detail:</strong>
+  <%= @missing.detail %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @missing.status %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @missing.picture %>
+</p>
+
+<%= link_to 'Edit', edit_missing_path(@missing) %> |
+<%= link_to 'Back', missings_path %>
