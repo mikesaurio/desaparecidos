@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
     overflow-x: hidden;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -50,7 +50,7 @@ h6 {
     text-transform: uppercase;
     font-weight: 700;
     color: #000!important;
-    text-align: center!important;
+    text-align: left!important;
 }
 
 .img-centered {
@@ -125,7 +125,12 @@ fieldset[disabled] .btn-primary.active {
     color: #878787;
     background-color: #fed136;
 }
-
+.timeline_c{
+    margin: 20px 0;
+    padding: 20px;
+    background: #eee!important;
+    border-top: #000 3px;
+}
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -174,6 +179,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     color: #000!important;
+    background: url(app/images/NosFaltanMas.png) no-repeat!important;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -226,6 +232,16 @@ fieldset[disabled] .btn-xl.active {
     color: #BFBFBF;
     background-color: #fec503;
 }
+.page-header {
+  padding-bottom: 9px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #aaa!important;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #AAA;
+}
 
 @media(min-width:768px) {
     .navbar-default {
@@ -272,25 +288,43 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 50px;
+    text-align: left;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-size: 25px;
     font-style: italic;
     line-height: 22px;
     color: #fed136!important;
+    margin: 0 auto;
+}
+.intro_p{
+    font-size: 18px!important;
+    line-height: 22px;
+    width: 70%;
+    margin: 0 auto;
 }
 
-header .intro-text .intro-heading {
+header .intro-text{
     margin-bottom: 25px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px!important;
     font-weight: lighter!important;
     text-transform: none!important;
+}
+header .intro-heading {
+    font-size: 20px!important;
+    font-weight: lighter!important;
+    text-transform: none!important;
+    width: 60%;
+    margin: 0 auto;
+    font-family: serif!important;
+    font-style: italic;
+    line-height: normal!important;
 }
 
 @media(min-width:768px) {
