@@ -125,9 +125,12 @@ fieldset[disabled] .btn-primary.active {
     color: #878787;
     background-color: #fed136;
 }
+.home_h2{
+    margin-top: 0!important;
+}
 .timeline_c{
     margin: 20px 0;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     background: #eee!important;
     border-top: #000 3px;
 }
@@ -323,6 +326,7 @@ header .intro-text{
     text-transform: none!important;
     padding-top: 100px;
     padding-bottom: 50px;
+    background: #000;
 
 }
 header .intro-heading {
@@ -352,7 +356,7 @@ header .intro-heading {
 }
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 50px;
 
     }
