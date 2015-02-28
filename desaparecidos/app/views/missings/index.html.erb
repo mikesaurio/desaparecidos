@@ -19,7 +19,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Desaparecidos</h2>
+                  <%= render "shared/search", custom_path: missings_path(@municipio), search_placeholder: 'Buscar por nombre' %>
             </div>
+            <%unless @missings.nil?%>
             <%@missings.each do |person|%>
             <%= link_to missing_path(person.id) do %>
             
@@ -37,28 +39,15 @@
               </div>
               <br>
           </div>
-        
-          <!--<div class="row">
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>...</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-        </div>
-      </div>
-    </div>
-  </div>-->
+          <%end%>
+          <%end%>
 
-          <%end%>
-          <%end%>
       </div>
   </div>
   <div class="row text-center">
     <%= paginate @missings %>
   </div>
-
+          <%end%>
 </section>
 
 
