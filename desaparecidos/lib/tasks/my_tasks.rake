@@ -23,6 +23,4 @@ namespace :my_tasks do
       end
     end
   end
-
-
 end
