@@ -69,6 +69,6 @@ class MissingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def missing_params
-      params.require(:missing).permit(:name, :since, :where_missing, :detail, :status, :picture)
+      params.require(:missing).permit(:name, :since, :url_audio, :detail, :status, :picture, :city, :state)
     end
 end

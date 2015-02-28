@@ -11,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150228021246) do
+ActiveRecord::Schema.define(version: 20150228045034) do
 
   create_table "missings", force: :cascade do |t|
     t.text     "name"
     t.text     "since"
-    t.text     "where_missing"
     t.text     "detail"
     t.text     "status"
     t.text     "picture"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "city"
+    t.text     "state"
+    t.text     "url_audio"
   end
 
 end
