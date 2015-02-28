@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
     overflow-x: hidden;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -50,7 +50,7 @@ h6 {
     text-transform: uppercase;
     font-weight: 700;
     color: #000!important;
-    text-align: center!important;
+    text-align: left!important;
 }
 
 .img-centered {
@@ -174,6 +174,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     color: #000!important;
+    background: url(app/images/NosFaltanMas.png) no-repeat!important;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -225,6 +226,16 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #BFBFBF;
     background-color: #fec503;
+}
+.page-header {
+  padding-bottom: 9px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #aaa!important;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #AAA;
 }
 
 @media(min-width:768px) {

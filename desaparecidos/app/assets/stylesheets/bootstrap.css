@@ -1307,7 +1307,24 @@ mark,
   text-align: right;
 }
 .text-center {
-  text-align: center;
+  text-align: center!important;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+}
+.caption p{
+background:#000!important;
+  color: #fff!important;
+  padding: 10px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+  text-transform: uppercase;
+  text-align: center!important;
+  margin: 0 auto;
+  width: 35%;
+  display: block;
+}
+.caption h4{
+  height: 40px!important;
+  width: 70%!important;
+  margin: 20px auto;
 }
 .text-justify {
   text-align: justify;
@@ -1381,11 +1398,6 @@ a.bg-warning:hover {
 }
 a.bg-danger:hover {
   background-color: #e4b9b9;
-}
-.page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 3px solid #fed136!important;
 }
 ul,
 ol {
@@ -4475,6 +4487,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
+  background: url();
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4873,16 +4886,14 @@ a.badge:focus {
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
+  border: none!important;
 }
 .thumbnail > img,
 .thumbnail a > img {
   margin-right: auto;
   margin-left: auto;
+  width: 50%!important;
+  height: 50%!important;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
