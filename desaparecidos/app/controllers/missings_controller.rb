@@ -4,7 +4,7 @@ class MissingsController < ApplicationController
   # GET /missings
   # GET /missings.json
   def index
-    @missings = Missing.all
+    @missings = Missing.order(:name).page(params[:page]).per(9)
   end
 
   # GET /missings/1

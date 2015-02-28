@@ -1,3 +1,6 @@
+
+  <%= render "shared/header_show" %>
+  <br><br><br><br>
 <%= form_for(@missing) do |f| %>
   <% if @missing.errors.any? %>
     <div id="error_explanation">
@@ -10,8 +13,7 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="field ">
     <%= f.label :name %><br>
     <%= f.text_area :name %>
   </div>
@@ -25,7 +27,7 @@
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_area :status %>
+   <%= select_tag :status, options_for_select(estatus_helper) %>
   </div>
   <div class="field">
     <%= f.label :picture %><br>
@@ -48,3 +50,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+
