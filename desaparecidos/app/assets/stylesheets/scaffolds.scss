@@ -1,15 +1,19 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif!important;
   font-size: 13px;
   line-height: 18px;
 }
+h3:hover{
+  color:inherit!important;
+}
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif!important;
   font-size: 13px;
   line-height: 18px;
+  text-align:left;
 }
 
 pre {
@@ -20,13 +24,9 @@ pre {
 
 a {
   color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+}
+a:hover{
+  color:inherit!important;
 }
 
 div {

@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -37,12 +37,8 @@ a.active {
 a {
     color: #fed136;
 }
-
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: #fec503;
+a:hover{
+  color:inherit!important;
 }
 
 h1,
@@ -52,8 +48,9 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color: #000!important;
+    text-align: center!important;
 }
 
 .img-centered {
@@ -120,12 +117,12 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
     padding: 20px 40px;
     border-color: #fed136;
-    border-radius: 3px;
+    border-radius: 0!important;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
-    font-weight: 700;
-    color: #fff;
+    font-weight: bolder!important;
+    color: #878787;
     background-color: #fed136;
 }
 
@@ -134,9 +131,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #fec503;
+    border-color: #000!important;
+    color: #fed136!important;
+    background-color: #000!important;
 }
 
 .btn-xl:active,
@@ -172,18 +169,18 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+    color: #000!important;
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    color: #000!important;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #000!important;
 }
 
 .navbar-default .navbar-collapse {
@@ -207,7 +204,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
 }
@@ -226,13 +223,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: #BFBFBF;
     background-color: #fec503;
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 5px 0;
         border: 0;
         background-color: transparent;
         -webkit-transition: padding .3s;
@@ -265,7 +262,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(header-bg.jpg);
+    background-image: url(http://www.geografiadeldolor.com/img/sinaloa/sinaloa-1.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -285,15 +282,15 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    color: #fed136!important;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
+    font-size: 20px!important;
+    font-weight: lighter!important;
+    text-transform: none!important;
 }
 
 @media(min-width:768px) {
@@ -321,7 +318,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 section h2.section-heading {
@@ -338,10 +335,13 @@ section h3.section-subheading {
     font-style: italic;
     font-weight: 400;
 }
+section h3:hover{
+    color: inherit!important;
+}
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 20px 0!important;
     }
 }
 
