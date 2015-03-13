@@ -13,14 +13,18 @@
 
 ActiveRecord::Schema.define(version: 20150228045034) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "missings", force: :cascade do |t|
     t.text     "name"
     t.text     "since"
+    t.text     "where_missing"
     t.text     "detail"
     t.text     "status"
     t.text     "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.text     "city"
     t.text     "state"
     t.text     "url_audio"
