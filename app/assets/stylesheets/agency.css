@@ -182,7 +182,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     color: #000!important;
-    background: url(nosfaltanmas.png) no-repeat!important;
+    background: url(image_path('nosfaltamnas.png')) no-repeat!important;
 }
 
 .navbar-default .navbar-brand:hover,
